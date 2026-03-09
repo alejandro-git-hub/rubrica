@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzón CUC</title>
+    <style>
+        html,body{
+            background-color: rgb(215, 218, 255);
+            margin:0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Buzón cuc Escucha</h1>
+    <p>Facultad de Ingenieria</p>
+    <form name="buzon-cuc" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="buzon-cuc">
+
+        <label>Nombre completo</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Correo institucional</label><br>
+        <input type="email" name="correo" required><br><br>
+
+        <label>Pograma académico</label><br>
+        <input type="text" name="programa" required><br><br>
+
+        <label>Mensaje</label>
+        <textarea name="text" rows="5" required></textarea><br><br>
+
+        <button type="submit">Enviar sugerencia</button>
+    </form>
+</body>
+</html>
